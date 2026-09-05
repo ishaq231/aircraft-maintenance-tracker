@@ -1,4 +1,4 @@
-# aircraft-maintenance-tracker# Aircraft Maintenance Tracker
+# Aircraft Maintenance Tracker
 
 A Java application for tracking aircraft components and flagging when they're due for maintenance based on logged flight hours. Built as a personal project to gain hands-on Java experience, applying object-oriented design principles already used in Python projects to a statically typed language.
 
