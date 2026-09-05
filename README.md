@@ -51,3 +51,10 @@ mvn compile exec:java -Dexec.mainClass="MaintenanceTracker"
 ## Tests
 
 5 JUnit tests covering component tracking, correct overdue detection, and error handling for missing aircraft, empty registration numbers, and negative flight hours.
+
+## Next steps
+
+- **REST API layer with Spring Boot**, exposing `logFlightHours` and related operations as proper endpoints, then containerising and deploying it, mirroring the live, tested deployment already built for an earlier Python project.
+- **Interactive input handling**, using `Scanner` to accept registration numbers and flight hours from the user directly, with a retry loop when an `AircraftNotFoundException` or `IllegalArgumentException` is thrown, rather than only exercising these paths through hardcoded test data.
+- **More realistic test scenarios**, including multiple aircraft tracked at once, and a component that is already overdue before any new hours are logged.
+- **Persistent storage**, replacing the in-memory `ArrayList` with a real database, so data survives beyond a single run of the program.
